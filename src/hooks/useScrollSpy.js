@@ -22,7 +22,7 @@ export const useScrollSpy = (scrollContainerRef) => {
         break;
       }
     }
-  }, [activeSlide]);
+  }, [scrollContainerRef, activeSlide]);
 
   return { activeSlide, handleScroll };
 };
