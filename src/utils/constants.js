@@ -64,7 +64,7 @@ export const courseData = [
     description: 'Bridge the gap from simulation to hardware. Sensor integration and real robot workflows.'
   },
   {
-    image: '/images/care_training_1774087284054.png',
+    image: '/images/care_training_new_1774088234687.png',
     duration: '25-30 Hrs',
     title: 'Drone Technology',
     description: 'Assembly, autonomous testing, calibration, and supervised pilot flight operations.'
