@@ -1,19 +1,30 @@
-import React from 'react';
-import './Ros2Slide.css';
+import React from "react";
+import "./Ros2Slide.css";
 
 const Ros2Slide = ({ isVisible }) => {
   return (
-    <section className={`slide ${isVisible ? 'is-visible' : ''}`} id="slide-ros2">
+    <section
+      className={`slide ${isVisible ? "is-visible" : ""}`}
+      id="slide-ros2"
+    >
       <div className="overlay-gradient event-schedule-blue"></div>
       <div className="content">
         <div className="eyebrow">Skill up with ROS2</div>
-        <h1>EVENT <span>SCHEDULE</span></h1>
+        <h1>
+          EVENT <span>SCHEDULE</span>
+        </h1>
         <p className="desc">
-          Are you ready to take your first step into the world of robotics and autonomous systems?
-          We are excited to invite you to <strong>"Skill Up with ROS2"</strong>, a 3-day intensive hands-on program designed to help you gain practical experience in simulation, navigation, analysis, and deployment of ground-based robotic systems.
+          Are you ready to take your first step into the world of robotics and
+          autonomous systems? We are excited to invite you to{" "}
+          <strong>"Skill Up with ROS2"</strong>, a 3-day intensive hands-on
+          program designed to help you gain practical experience in simulation,
+          navigation, analysis, and deployment of ground-based robotic systems.
         </p>
         <p className="desc">
-          This course is ideal for engineering students, fresh graduates, and tech enthusiasts who want to build industry-relevant skills and explore real-world robotic applications through structured, simulation-driven workflows.
+          This course is ideal for engineering students, fresh graduates, and
+          tech enthusiasts who want to build industry-relevant skills and
+          explore real-world robotic applications through structured,
+          simulation-driven workflows.
         </p>
         <div className="ros2-event-card">
           <div className="event-item">
@@ -44,12 +55,43 @@ const Ros2Slide = ({ isVisible }) => {
         <p className="ros2-warning">
           ⚠️ Seats are limited — secure your spot now
         </p>
-        <button className="btn" onClick={() => window.open('https://forms.gle/3AGBd78VEqzgBgmt7')}>
-          Register Now 🚀
-        </button>
-        <button className="btn" onClick={() => window.location.href = '/images/Poster.jpg'}>
-          View Poster 📄
-        </button>
+        <div className="ros2-buttons-group">
+          <div className="reg-option">
+            <button
+              className="btn btn-primary"
+              onClick={() =>
+                window.open("https://mahemobility.mitblr.org/ros2-course")
+              }
+            >
+              📋 Course Details & Registration
+            </button>
+            <p className="reg-note">
+              Full course details, schedule, and venue information
+            </p>
+          </div>
+
+          <div className="reg-option">
+            <button
+              className="btn btn-secondary"
+              onClick={() => window.open("https://forms.gle/3AGBd78VEqzgBgmt7")}
+            >
+              📝 Direct Registration Form
+            </button>
+            <p className="reg-note">
+              Direct registration form - fastest way to secure your seat
+            </p>
+          </div>
+
+          <div className="reg-option">
+            <button
+              className="btn btn-outline"
+              onClick={() => window.open("/images/Poster.jpg")}
+            >
+              📄 View Poster
+            </button>
+            <p className="reg-note">Share with friends and colleagues</p>
+          </div>
+        </div>
       </div>
     </section>
   );

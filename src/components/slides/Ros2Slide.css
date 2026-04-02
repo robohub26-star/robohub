@@ -67,6 +67,72 @@
   padding: 12px 20px;
 }
 
+.ros2-buttons-group {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.reg-option {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.reg-option .btn {
+  width: 100%;
+  margin-bottom: 12px;
+  justify-content: center;
+}
+
+.reg-note {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.4;
+  padding: 0 10px;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+.btn-outline:hover {
+  background: var(--accent);
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .ros2-buttons-group {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .reg-option {
+    min-width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .ros2-event-card {
     flex-direction: column;
